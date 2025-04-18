@@ -1,261 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | RentalX</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="nav__header">
-          <div class="nav__logo">
-            <a href="#">RentalX</a>
-          </div>
-          <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-line"></i>
-          </div>
-        </div>
-        <ul class="nav__links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#rent">Rent</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#ride">Ride</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="nav__links__btn">
-            <button class="btn">Sign Up</button>
-          </li>
-          <li class="nav__links__btn">
-            <button class="btn">Sign In</button>
-          </li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Website</title>
+    <head>
+        <!-- link to Css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Box Icon -->
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+      </head>
+</head>
+<body>
+     <!-- Header -->
+     <header>
+        <a href="#" class="logo"><img src="img/jeep.png" alt="jeep car"><p>CAR RENTAL SYSTEM</p></a>
+        
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
+        <ul class="navbar">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#ride">Ride</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Review">Reviews</a></li>
         </ul>
-        <div class="nav__btns">
-          <button class="btn btn__primary">Sign Up</button>
-          <button class="btn btn__secondary">Sign In</button>
+        <div class="header-btn">
+            <a href="sign-up.html" class="sign-up">sign-up</a>
+            <a href="sign-in.html" class="sign-in">sign-in</a>
         </div>
-      </nav>
-      <div class="section__container header__container" id="home">
-        <div class="header__image">
-          <img src="assets/header.png" alt="header" />
-        </div>
-        <div class="header__content">
-          <h1>Looking to save more on your rental car?</h1>
-          <p>
-            Discover RentalX car rental aoptions in India with Rent a Car Select
-            from a range of car options and local specials.
-          </p>
-          <div class="header__links">
-            <a href="#">
-              <img src="assets/store.jpg" alt="app store" />
-            </a>
-            <a href="#">
-              <img src="assets/play.png" alt="play" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="section__container steps__container" id="rent">
-      <p class="section__subheader">HOW IT WORKS</p>
-      <h2 class="section__header">Rentgo following 3 working steps</h2>
-      <div class="steps__grid">
-        <div class="steps__card">
-          <span><i class="ri-map-pin-fill"></i></span>
-          <h4>Choose a location</h4>
-          <p>
-            Select your desired rental location from our extensive network of
-            car rental spots.
-          </p>
-        </div>
-        <div class="steps__card">
-          <span><i class="ri-calendar-check-fill"></i></span>
-          <h4>Pick-up date</h4>
-          <p>
-            Specify the date and time you wish to pick up your car with flexible
-            scheduling options.
-          </p>
-        </div>
-        <div class="steps__card">
-          <span><i class="ri-bookmark-3-fill"></i></span>
-          <h4>Book your car</h4>
-          <p>
-            Browse through our wide range of vehicles and choose the one that
-            best suits your needs.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section__container service__container" id="service">
-      <div class="service__image">
-        <img src="assets/service.png" alt="service" />
-      </div>
-      <div class="service__content">
-        <p class="section__subheader">BEST SERVICES</p>
-        <h2 class="section__header">
-          Feel the best experience with our rental deals
-        </h2>
-        <ul class="service__list">
-          <li>
-            <span><i class="ri-price-tag-3-fill"></i></span>
-            <div>
-              <h4>Deals for every budget</h4>
-              <p>
-                From economy cars to luxury vehicles, we have something for
-                everyone, ensuring you get the best value for your money.
-              </p>
+     </header>
+        <!-- HOME -->
+    <section class="home" id="Home">
+        <div class="text">
+            <h1><span>Looking</span> to <br>Rent a Car</h1>
+            <p>India's Largest Intercity and Local Cab Services <br>Exploring India, one road trip at a time </p>
+            <div class="app-stores">
+                <img src="img/ios.png" alt="">
+                <img src="img/512x512.png" alt="">
             </div>
-          </li>
-          <li>
-            <span><i class="ri-wallet-fill"></i></span>
-            <div>
-              <h4>Best price guarantee</h4>
-              <p>
-                We ensure you get competitive rates in the market, so you can
-                book with confidence knowing you're getting the best deal.
-              </p>
+        </div>
+
+        <!-- <div class="form-container">
+            <form action="">
+                <div class="input-box">
+                    <span>Location</span>
+                    <select name="Location" id="Location" style="height: 35px; border-radius: 10px ;background-color: #4444; border:none ">
+                        
+                        <option>Mumbai</option>
+                        <option>Delhi</option>
+                        <option>Goa</option>
+                        <option>Amritsar</option>
+                    </select>
+                    
+                </div>
+                <div class="input-box">
+                    <span>Pick-Up Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="input-box">
+                    <span>Return Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <input type="Submit" name="" id="" class="btn">
+            </form>
+        </div> -->
+    </section>
+    <!-- Ride -->
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>How Its Work</span>
+            <h1>Rent With 3 Easy Steps</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class='bx bxs-map'></i>
+                <h2>Choose a Location</h2>
+                <p>LPU, JALANDHAR, PUNJAB</p>
+            </div>  <div class="box">
+                <i class='bx bx-calendar-check'></i>
+                <h2>Pick-Up Date</h2>
+                <p>Nice to see you.</p>
             </div>
-          </li>
-          <li>
-            <span><i class="ri-customer-service-fill"></i></span>
-            <div>
-              <h4>Support 24/7</h4>
-              <p>
-                Our dedicated team is available 24/7 to assist you with any
-                questions or concerns, ensuring a smooth rental experience.
-              </p>
+            <div class="box">
+                 <i class='bx bxs-calendar-star'></i>
+                <h2>Book A Car</h2>
+                <p>Your journey is good and you enjoy well.</p>
             </div>
-          </li>
-        </ul>
-      </div>
+        </div>
+        <!-- Services -->
+        <section class="Services" id="Services">
+                <div class="heading">
+                <span>Best Services</span>
+                <h 1>Explore Out Top Deals <br> From Top Rated Dealers</h1>
+            </div>
+            <div class="services-container">
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car1.jpg" alt="">
+                    </div>
+                    <p>2017</p>
+                    <h3>2017 Honda Civis</h3>
+                    <h2>$58500 | $358 <span>/month</span></h2>
+                    <a href="#" class="btn"> Rent Now</a>
+                </div> 
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car2.jpg" alt="">
+                        <!-- <a href="#" class="btn"> Rent Now</a> -->
+                    </div>
+                    <p>2017</p>
+                    <h3>2017 Hatchback</h3>
+                    <h2>$58500 | $458 <span>/month</span></h2>
+                    <a href="#" class="btn"> Rent Now</a>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car3.jpg" alt="">   
+                    </div>
+                    <p>2018</p>
+                    <h3>2018 Convertible</h3>
+                    <h2>$57500 | $348 <span>/month</span></h2>
+                    <a href="#" class="btn"> Rent Now</a>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car4.jpg" alt="">
+                    </div>
+                    <p>2011</p>
+                    <h3>2011 Toyto</h3>
+                    <h2>$59500 | $258 <span>/month</span></h2>
+                    <a href="#" class="btn"> Rent Now</a>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car5.jpg" alt="">
+                    </div>
+                    <p>2018</p>
+                    <h3>2018 Audi</h3>
+                    <h2>$68500 | $558 <span>/month</span></h2>
+                    <a href="#" class="btn"> Rent Now</a>
+                </div>
+                <div class="box">
+                    <div class="box-img">
+                        <img src="img/car6.jpg" alt="">
+                    </div>
+                    <p>2021</p>
+                    <h3>2021 Lamborgini</h3>
+                    <h2>$58500 | $358 <span>/month</span></h2>
+                    <a href="#" class="btn"> Rent Now</a>
+                </div>
+
+            </div>
+        </section>
     </section>
+    <!-- About -->
+    <section class="About" id="About">
 
-    <section class="section__container experience__container" id="ride">
-      <p class="section__subheader">CUSTOMER EXPERIENCE</p>
-      <h2 class="section__header">
-        We are ensuring the best customer experience
-      </h2>
-      <div class="experience__content">
-        <div class="experience__card">
-          <span><i class="ri-price-tag-3-fill"></i></span>
-          <h4>Competitive pricing</h4>
+        <div class="heading">
+            <span>About Us</span>
+            <h1>Best Customer Experience<h1>
         </div>
-        <div class="experience__card">
-          <span><i class="ri-money-rupee-circle-fill"></i></span>
-          <h4>Easier Rent On Your Budget</h4>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="about.png" alt="">
+            </div>
+            <div class="about-text">
+                <span>About Us </span>
+                <p>CAR price starts from Rs. 4,00,000. car offers 3 new models in India with most popular bikes being S1, S1 Pro and S1 Air. Most expensive Car is S1 Pro, which is priced at Rs. 1,00,00,000.</p>
+                <p>After disrupting the Indian app-based cab industry, the company has decided to do the same in the electric two-wheeler space. The company acquired Amsterdam-based EV company Etergo so that it could foray into the Indian market.</p>
+                <p>The company is also in the process of setting up a factory in Tamil Nadu which it claims to be the biggest in the world. This facility will manufacture its first electric scooter which is likely to be called the Series S. This EV is also being planned to be exported to various other markets including some developed markets. Ola is planning to set up multiple charging points across the country, but its main focus will be to set up home charging points.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
         </div>
-        <div class="experience__card">
-          <span><i class="ri-bank-card-fill"></i></span>
-          <h4>Most Felxible Payment Plans</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-award-fill"></i></span>
-          <h4>The Best Extended Auto Warranties</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-customer-service-2-fill"></i></span>
-          <h4>Roadside Assistance 24/7</h4>
-        </div>
-        <div class="experience__card">
-          <span><i class="ri-car-fill"></i></span>
-          <h4>Your Choice Of Mechanic</h4>
-        </div>
-        <img src="assets/experience.png" alt="experience" />
-      </div>
     </section>
+    <!--Reviews-->
+    <section class="Review" id="Review">
+        <div class="heading">
+            <span>Reviews</span>
+            <h1>What Our Customer Says<h1>
+        </div>
+        <div class="reviews-container">
+            <div class="box">
+                <div class="rev-img">
+                    <img src="img/rev1.jpg" alt="">
+                </div>
+                <h2>Datta Avinash</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>We recently tested the Ola S1 Pro e-scooter briefly and found out quite a few things about its performance, mechanical bits, and features. However, to get a fair idea of what it’s like to live with and test various parameters, like its range, discharge and charging time, and even its overall usability in various weather conditions, we needed to ride it extensively. </p>
 
-    <section class="section__container download__container" id="contact">
-      <div class="download__grid">
-        <div class="download__content">
-          <h2 class="section__header">Download the free RentalX app</h2>
-          <p>
-            Download the RentalX app to manage your bookings, find exclusive
-            deals, and access 24/7 support, all from your mobile device.
-          </p>
-          <div class="download__links">
-            <a href="#">
-              <img src="assets/store.jpg" alt="app store" />
-            </a>
-            <a href="#">
-              <img src="assets/play.png" alt="play" />
-            </a>
-          </div>
-        </div>
-        <div class="download__image">
-          <img src="assets/download.png" alt="download" />
-        </div>
-      </div>
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="img/rev2.jpg" alt="">
+                </div>
+                <h2>Roshan Singh</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>I am making a plan for visiting the uttrakhand with the Family. One of my friend has recommended me Gttaxi car hire agency in Haridwar. Can anyone share their experience with Gttaxi so that i could plan my trip with Gttaxi?</p>
+
+            </div>
+            <div class="box">
+                <div class="rev-img">
+                    <img src="img/rev3.jpg" alt="">
+                </div>
+                <h2>Huma Qureshi</h2>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>is it true ola had given business, senior priority wise to the attached owner?</p>
+            
     </section>
+    <!--Newsletter-->
+    <section class="newsletter">
+        <h2>Subscribe to Newsletter</h2>
+        <div class="box">
+            <input type="text" placeholder="Enter your email..">
+            <a href="#" class="btn">subscribe</a>
+            </div>
+        </section>
+        <div class="">
+            <p>&#169;Rar All rights reserved</p>
+            <div class="social">
+                <a href="#"><i class="bx bx1-facebook"></i></a>
+                <a href="#"><i class="bx bx1-twitter"></i></a>
+                <a href="#"><i class="bx bx1-instagram"></i></a>
+                </div>
+            </div>    
 
-    <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <h4>Our Products</h4>
-          <ul class="footer__links">
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Hotels</a></li>
-            <li><a href="#">Cars</a></li>
-            <li><a href="#">Packages</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Priceline</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>About RentalX</h4>
-          <ul class="footer__links">
-            <li><a href="#">Why RentalX</a></li>
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Investors</a></li>
-            <li><a href="#">Press Centers</a></li>
-            <li><a href="#">Advertise</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Resources</h4>
-          <ul class="footer__links">
-            <li><a href="#">Download</a></li>
-            <li><a href="#">Help Centers</a></li>
-            <li><a href="#">Guides</a></li>
-            <li><a href="#">Partner Network</a></li>
-            <li><a href="#">Mechanics</a></li>
-            <li><a href="#">Developer</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Extras</h4>
-          <ul class="footer__links">
-            <li><a href="#">Rental Deal</a></li>
-            <li><a href="#">Repair Shop</a></li>
-            <li><a href="#">View Booking</a></li>
-            <li><a href="#">Hire Companies</a></li>
-            <li><a href="#">New Offers</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="section__container footer__bar">
-        <h4>RentalX</h4>
-        <p>Copyright © 2024 Web Design Mastery. All rights reserved.</p>
-        <ul class="footer__socials">
-          <li>
-            <a href="#"><i class="ri-facebook-fill"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ri-google-fill"></i></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- link to java script -->
     <script src="main.js"></script>
-  </body>
+</body>
 </html>
